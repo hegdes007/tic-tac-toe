@@ -1,0 +1,78 @@
+body{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='960' preserveAspectRatio='none' viewBox='0 0 1920 960'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1706%26quot%3b)' fill='none'%3e%3crect width='1920' height='960' x='0' y='0' fill='url(%23SvgjsLinearGradient1707)'%3e%3c/rect%3e%3cpath d='M0 0L697.49 0L0 347.85z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 347.85L697.49 0L1166.69 0L0 589.6z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 589.6L1166.69 0L1268.55 0L0 739.87z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 739.87L1268.55 0L1308.97 0L0 840.92z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M1920 960L1239.6599999999999 960L1920 703.6z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M1920 703.6L1239.6599999999999 960L1032.6799999999998 960L1920 660.59z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M1920 660.59L1032.6799999999998 960L533.0999999999999 960L1920 517.86z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M1920 517.86L533.0999999999999 960L183.5499999999999 960L1920 424.21000000000004z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1706'%3e%3crect width='1920' height='960' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='12.5%25' y1='125%25' x2='87.5%25' y2='-25%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1707'%3e%3cstop stop-color='rgba(18%2c 86%2c 110%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(20%2c 144%2c 11%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+td {
+  border: 5px solid black;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 70px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+@media screen and (max-width:650px) {
+  td {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+table tr:last-child td{
+  border-bottom: 0;
+}
+table tr td:first-child{
+  border-left: 0;
+}
+table tr td:last-child{
+  border-right: 0;
+}
+
+.endgame {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  right: 0%;
+  bottom: 0%;
+  background-color:rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 350%;
+  flex-direction: column;
+}
+
+.endgame button {
+  font-size: 2rem;
+  color: rgb(2, 31, 1);
+  font-style: italic;
+  background-color: rgba(200, 221, 182, 0.822);
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.endgame button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
